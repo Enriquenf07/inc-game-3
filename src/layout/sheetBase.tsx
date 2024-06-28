@@ -24,10 +24,9 @@ function SheetBase({ icon, children, title, side = 'right', open, setOpen }: pro
             <SheetContent side={side}>
                 <SheetHeader className="mt-4">
                     <SheetTitle className="hidden">{title}</SheetTitle>
-                    <SheetDescription>
-                        {children}
-                    </SheetDescription>
+                    <SheetDescription className="hidden">Menu</SheetDescription>
                 </SheetHeader>
+                {children}
             </SheetContent>
         </Sheet>
     )
